@@ -41,7 +41,7 @@ deploy:
         script: |
           eval "$(ssh-agent -s)"
           ssh-add ~/.ssh/senpro-ssh
-          cd ~/senpro/456372/modul01/senpro-github-action
+          cd ~/senpro/456372/modul01/senpro-github-action.git
           git restore .
           git pull origin main
           npm install
